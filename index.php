@@ -2,11 +2,12 @@
 session_start();
 if(!isset($_SESSION['the_number']))
 {
+    //generation random number if session is set
     $_SESSION['the_number'] = rand(1, 100);
 }
 
 if(!isset($_SESSION['counter']))
-{
+{ 
     $_SESSION['counter'] = 0;
 }
 else
